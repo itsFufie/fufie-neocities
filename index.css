@@ -1,0 +1,172 @@
+:root {
+    --background-alt: #202121;
+    --background: #373B41;
+    --text: #51DBE8;
+    --primary: #E23790;
+    --secondary: #55EDFB;
+    --alert: #A54242;
+    --disabled: #707880;
+    --background-opacity: rgba(32, 33, 33, 0.95);
+}
+
+@font-face {
+    font-family: 'Blokletters_Balpen';
+    src: url('assets/fonts/Blokletters-Balpen-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+.title {
+    font-family: 'Schoolbell', cursive;
+    font-weight: 600;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    font-size: 22px;
+    margin: 0 0 0 6px;
+}
+
+.text {
+    font-family: 'Blokletters_Balpen';
+    font-weight: 600;
+    font-style: normal;
+    font-size: 16px;
+    color: var(--text);
+}
+
+body {
+    height: 100vh;
+    padding: 0;
+    margin: 0;
+    background-image: url('assets/starry-sky-bg1.png');
+    color: var(--text);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.post-card {
+    width: 60%;
+    /*  background-alt  */
+    background: var(--background-opacity);
+    margin: 24px auto;
+    border-style: double;
+    border-width: 8px;
+    border-color: var(--disabled);
+    text-align: center;
+}
+.logo {
+    width: 60%;
+    margin-top: 18px;
+}
+
+.centralized {
+    width: fit-content;
+    margin: 0 auto;
+}
+.card-full-size {
+    width: 60%;
+    background-color: var(--background-opacity);
+    border-style: double;
+    border-width: 8px;
+    border-color: var(--disabled);
+}
+
+.stamp-box {
+    padding: 24px;
+}
+
+.card-fit-content {
+    width: fit-content;
+    background-color: var(--background-opacity);
+    border-style: double;
+    border-width: 8px;
+    border-color: var(--disabled);
+}
+
+.card-half-size {
+    width: 30%;
+    background: var(--background-opacity);
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--disabled);
+    margin-top: 24px;
+}
+
+.inner-card {
+    border-style: solid;
+    border-width: 3px;
+    border-color: var(--disabled);
+    margin: 2px;
+    font-size: 16px;
+}
+
+.regular-margin {
+    margin: 6px;
+}
+
+.card-half-size:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary);
+}
+
+.card-half-size:hover .inner-card {
+    border-color: var(--primary);
+}
+
+#outer-about-me-card {
+    padding-top: 4px;
+}
+
+
+.title-underline {
+    text-decoration: underline var(--text);
+}
+.text-accent {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.no-text-decoration {
+    text-decoration: none;
+}
+
+main {
+    flex: 1;
+}
+
+.footer {
+    font-family: 'Schoolbell';
+    font-size: 18px;
+    max-width: 400px;
+    background-color: var(--background-opacity);
+    text-align: center;
+    border-color: var(--disabled);
+    border-style: double;
+    border-width: 8px;
+    margin: 24px;
+}
+
+.footer:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary);
+}
+
+a {
+    text-decoration: none;
+    color: var(--primary);
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.card-fit-content:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary);
+}
+
+.post-card:hover {
+    border-color: var(--primary);
+    box-shadow: 0 0 20px var(--primary);
+}
